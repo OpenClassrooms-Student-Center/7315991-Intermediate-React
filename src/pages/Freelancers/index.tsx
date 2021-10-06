@@ -9,12 +9,12 @@ const freelanceProfiles = [
   },
   {
     name: 'John Doe',
-    jobTitle: 'Developpeur frontend',
+    jobTitle: 'Frontend developer',
     picture: DefaultPicture,
   },
   {
     name: 'Jeanne Biche',
-    jobTitle: 'Développeuse Fullstack',
+    jobTitle: 'Fullstack developer',
     picture: DefaultPicture,
   },
 ]
@@ -22,7 +22,7 @@ const freelanceProfiles = [
 function Freelances() {
   return (
     <div>
-      <h1>Freelances 👩‍💻👨‍💻👩‍💻</h1>
+      <h1>Freelancers 👩‍💻👨‍💻👩‍💻</h1>
       {freelanceProfiles.map((profile, index) => (
         <Card
           key={`${profile.name}-${index}`}
