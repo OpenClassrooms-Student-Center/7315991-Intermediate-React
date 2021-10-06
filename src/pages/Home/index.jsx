@@ -1,5 +1,6 @@
 function Home() {
-  return <div>Page d'accueil 🏡</div>
+  console.log(myVariable);
+  return <div>Home page 🏡</div>
 }
 
 export default Home
