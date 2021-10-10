@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './pages/Home'
 import Survey from './pages/Survey'
 import Results from './pages/Results'
-import Freelances from './pages/Freelances'
+import Freelancers from './pages/Freelancers'
 import Header from './components/Header'
 import Error from './components/Error'
 
@@ -22,8 +22,8 @@ ReactDOM.render(
         <Route path="/results">
           <Results />
         </Route>
-        <Route path="/freelances">
-          <Freelances />
+        <Route path="/freelancers">
+          <Freelancers />
         </Route>
         <Route>
           <Error />
