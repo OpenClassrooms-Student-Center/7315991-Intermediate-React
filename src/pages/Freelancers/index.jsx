@@ -3,22 +3,22 @@ import Card from '../../components/Card'
 const freelanceProfiles = [
   {
     name: 'Jane Doe',
-    jobTitle: 'Devops',
+    jobTitle: 'DevOps',
   },
   {
     name: 'John Doe',
-    jobTitle: 'Developpeur frontend',
+    jobTitle: 'Front-End Developer',
   },
   {
     name: 'Jeanne Biche',
-    jobTitle: 'Développeuse Fullstack',
+    jobTitle: 'Full-Stack Developer',
   },
 ]
 
-function Freelances() {
+function Freelancers() {
   return (
     <div>
-      <h1>Freelances 👩‍💻👨‍💻👩‍💻</h1>
+      <h1>Freelancers 👩‍💻👨‍💻👩‍💻</h1>
       {freelanceProfiles.map((profile, index) => (
         <Card
           key={`${profile.name}-${index}`}
@@ -30,4 +30,4 @@ function Freelances() {
   )
 }
 
-export default Freelances
+export default Freelancers
