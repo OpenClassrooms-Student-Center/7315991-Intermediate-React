@@ -21,7 +21,7 @@ function Home() {
 
   return (
     <HomeContainer>
-      <h1 onClick={() => setSize(size + 0.1)}> Page d'accueil 🏠</h1>
+      <h1 onClick={() => setSize(size + 0.1)}>Home page 🏠</h1>
       <Balloon size={size} />
     </HomeContainer>
   )
