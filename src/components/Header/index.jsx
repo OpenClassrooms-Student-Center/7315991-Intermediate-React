@@ -21,10 +21,10 @@ function Header() {
         <HomeLogo src={DarkLogo} />
       </Link>
       <div>
-        <StyledLink to="/">Accueil</StyledLink>
-        <StyledLink to="/freelances">Profils</StyledLink>
+        <StyledLink to="/">Home</StyledLink>
+        <StyledLink to="/freelances">Profiles</StyledLink>
         <StyledLink to="/survey/1" $isFullLink>
-          Faire le test
+          Take the survey
         </StyledLink>
       </div>
     </NavContainer>
