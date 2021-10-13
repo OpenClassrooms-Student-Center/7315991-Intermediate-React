@@ -55,7 +55,7 @@ function Survey() {
     // }
     // fetchSurvey()
     setDataLoading(true)
-    fetch(`http://localhost:8000/survey`)
+    fetch(`http://localhost:3000/survey`)
       .then((response) => response.json())
       .then(({ surveyData }) => {
         setSurveyData(surveyData)
