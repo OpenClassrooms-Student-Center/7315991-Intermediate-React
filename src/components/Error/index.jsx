@@ -25,10 +25,10 @@ const Illustration = styled.img`
 function Error() {
   return (
     <ErrorWrapper>
-      <ErrorTitle>Oups...</ErrorTitle>
+      <ErrorTitle>Oops...</ErrorTitle>
       <Illustration src="https://github.com/atoulmet/assets/blob/master/404.svg?raw=true" />
       <ErrorSubtitle>
-        Il semblerait que la page que vous cherchez n’existe pas
+        It looks like the page you're after doesn't exist
       </ErrorSubtitle>
     </ErrorWrapper>
   )

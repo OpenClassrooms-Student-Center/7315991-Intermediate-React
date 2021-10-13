@@ -64,7 +64,7 @@ function Survey() {
   }, [])
 
   if (error) {
-    return <span>Oups il y a eu un problème</span>
+    return <span>Oops there has been a problem</span>
   }
 
   return (
@@ -76,11 +76,11 @@ function Survey() {
         <QuestionContent>{surveyData[questionNumber]}</QuestionContent>
       )}
       <LinkWrapper>
-        <Link to={`/survey/${prevQuestionNumber}`}>Précédent</Link>
+        <Link to={`/survey/${prevQuestionNumber}`}>Back</Link>
         {surveyData[questionNumberInt + 1] ? (
-          <Link to={`/survey/${nextQuestionNumber}`}>Suivant</Link>
+          <Link to={`/survey/${nextQuestionNumber}`}>Next</Link>
         ) : (
-          <Link to="/results">Résultats</Link>
+          <Link to="/results">Results</Link>
         )}
       </LinkWrapper>
     </SurveyContainer>
