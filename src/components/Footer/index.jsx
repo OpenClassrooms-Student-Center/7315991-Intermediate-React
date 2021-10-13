@@ -33,7 +33,7 @@ function Footer() {
     </ThemeContext.Consumer>
     //   <FooterContainer>
     //   <NightModeButton onClick={() => toggleTheme()}>
-    //     Changer de mode : {theme === 'light' ? '☀️' : '🌙'}
+    //     Change the mode : {theme === 'light' ? '☀️' : '🌙'}
     //   </NightModeButton>
     // </FooterContainer>
   )
