@@ -8,7 +8,7 @@ import {
 import '@testing-library/jest-dom'
 import { render } from '../../utils/test'
 import { ThemeProvider } from '../../utils/context'
-import Freelances from './'
+import Freelancers from './'
 
 const freelancersMockedData = [
   {
@@ -24,7 +24,7 @@ const freelancersMockedData = [
 ]
 
 const server = setupServer(
-  rest.get('http://localhost:8000/freelances', (req, res, ctx) => {
+  rest.get('http://localhost:8000/freelancers', (req, res, ctx) => {
     return res(ctx.json({ freelancersList: freelancersMockedData }))
   })
 )
@@ -36,7 +36,7 @@ afterAll(() => server.close())
 it('Should display freelancers names', async () => {
   render(
     <ThemeProvider>
-      <Freelances />
+      <Freelancers />
     </ThemeProvider>
   )
 

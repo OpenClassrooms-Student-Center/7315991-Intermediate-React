@@ -16,7 +16,7 @@ describe('The Home component', () => {
       screen.getByRole('heading', {
         level: 2,
         text:
-          'Repérez vos besoins, on s’occupe du reste, avec les meilleurs talents',
+          "Identify your needs and we'll take care of the rest along with our talented professionals vos besoins, on s’occupe du reste, avec les meilleurs talents",
       })
     ).toBeTruthy()
   })
