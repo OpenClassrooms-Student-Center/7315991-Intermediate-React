@@ -1,6 +1,6 @@
 import { sum } from './'
 
-test('Ma fonction sum', () => {
+test('My sum function', () => {
   const result = sum(40, 2)
   expect(result).toBe(42)
 })
