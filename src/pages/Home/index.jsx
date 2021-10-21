@@ -43,11 +43,11 @@ function Home() {
       <HomeContainer>
         <LeftCol>
           <StyledTitle>
-            Repérez vos besoins, on s’occupe du reste, avec les meilleurs
-            talents
+            Identify your needs and we'll take care of the rest along with our
+            talented professionals
           </StyledTitle>
           <StyledLink to="/survey/1" $isFullLink>
-            Faire le test
+            Take the survey
           </StyledLink>
         </LeftCol>
         <Illustration src={HomeIllustration} />

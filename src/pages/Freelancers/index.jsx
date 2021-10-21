@@ -32,18 +32,18 @@ const LoaderWrapper = styled.div`
   justify-content: center;
 `
 
-function Freelances() {
+function Freelancers() {
   const [isDataLoading, setDataLoading] = useState(false)
   const [error, setError] = useState(false)
-  const [freelancersList, setFreelancesList] = useState([])
+  const [freelancersList, setFreelancersList] = useState([])
 
   useEffect(() => {
-    async function fetchFreelances() {
+    async function fetchFreelancers() {
       setDataLoading(true)
       try {
-        const response = await fetch(`http://localhost:8000/freelances`)
+        const response = await fetch(`http://localhost:8000/freelancers`)
         const { freelancersList } = await response.json()
-        setFreelancesList(freelancersList)
+        setFreelancersList(freelancersList)
       } catch (err) {
         console.log('===== error =====', err)
         setError(true)
@@ -51,18 +51,18 @@ function Freelances() {
         setDataLoading(false)
       }
     }
-    fetchFreelances()
+    fetchFreelancers()
   }, [])
 
   if (error) {
-    return <span>Oups il y a eu un problème</span>
+    return <span>Oops! There is an error</span>
   }
 
   return (
     <div>
-      <PageTitle>Trouvez votre prestataire</PageTitle>
+      <PageTitle>Find your service provider</PageTitle>
       <PageSubtitle>
-        Chez Shiny nous réunissons les meilleurs profils pour vous.
+        Here at Shiny we bring together the best profiles for you.
       </PageSubtitle>
       {isDataLoading ? (
         <LoaderWrapper>
@@ -84,4 +84,4 @@ function Freelances() {
   )
 }
 
-export default Freelances
+export default Freelancers
