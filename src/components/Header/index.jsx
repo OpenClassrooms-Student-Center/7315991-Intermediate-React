@@ -15,8 +15,8 @@ const StyledLink = styled(Link)`
 function Header() {
   return (
     <nav>
-      <StyledLink to="/">Accueil</StyledLink>
-      <StyledLink to="/freelances">Profils</StyledLink>
+      <StyledLink to="/">Home</StyledLink>
+      <StyledLink to="/freelancers">Profiles</StyledLink>
       <StyledLink to="/survey/1" $isFullLink>
         Faire le test
       </StyledLink>
