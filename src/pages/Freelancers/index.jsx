@@ -41,12 +41,12 @@ const freelanceProfiles = [
   },
 ]
 
-function Freelances() {
+function Freelancers() {
   return (
     <div>
-      <PageTitle>Trouvez votre prestataire</PageTitle>
+      <PageTitle>Find your service provider</PageTitle>
       <PageSubtitle>
-        Chez Shiny nous réunissons les meilleurs profils pour vous.
+        Here at Shiny we bring together the best profiles for you.
       </PageSubtitle>
       <CardsContainer>
         {freelanceProfiles.map((profile, index) => (
@@ -61,4 +61,4 @@ function Freelances() {
   )
 }
 
-export default Freelances
+export default Freelancers

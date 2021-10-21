@@ -44,7 +44,7 @@ function Card({ label, title, picture }) {
   return (
     <CardWrapper>
       <CardLabel>{label}</CardLabel>
-      <CardImage src={picture} alt="freelance" />
+      <CardImage src={picture} alt="freelancer" />
       <CardTitle>{title}</CardTitle>
     </CardWrapper>
   )
