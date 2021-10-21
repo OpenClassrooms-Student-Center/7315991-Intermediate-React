@@ -38,11 +38,11 @@ function Survey() {
   const [surveyData, setSurveyData] = useState({})
   const [isDataLoading, setDataLoading] = useState(false)
 
-  // Cette syntaxe permet aussi bien de faire des calls API.
-  // Mais pour utiliser await dans une fonction, il faut que celle-ci soit async (pour asynchrone).
-  // Comme la fonction passée à useEffect ne peut pas être asynchrone,
-  // il faut utiliser une fonction qui est appelée dans useEffect et déclarée en dehors, comme ici 👇.
-  // Essayez de commenter le code créé dans le chapitre et de décommenter fetchData pour voir.
+  // This syntax allows to make API calls as well.
+  // But to use await in a function, it must be async (for asynchronous).
+  // As the function passed to useEffect can't be asynchronous,
+  // you have to use a function that is called in useEffect and declared outside, like here 👇.
+  // Try commenting out the code created in the chapter and uncommenting fetchData to see.
 
   // async function fetchData() {
   //   try {
@@ -75,11 +75,11 @@ function Survey() {
         <QuestionContent>{surveyData[questionNumber]}</QuestionContent>
       )}
       <LinkWrapper>
-        <Link to={`/survey/${prevQuestionNumber}`}>Précédent</Link>
+        <Link to={`/survey/${prevQuestionNumber}`}>Back</Link>
         {surveyData[questionNumberInt + 1] ? (
-          <Link to={`/survey/${nextQuestionNumber}`}>Suivant</Link>
+          <Link to={`/survey/${nextQuestionNumber}`}>Next</Link>
         ) : (
-          <Link to="/results">Résultats</Link>
+          <Link to="/results">Results</Link>
         )}
       </LinkWrapper>
     </SurveyContainer>
