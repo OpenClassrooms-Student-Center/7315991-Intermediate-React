@@ -34,23 +34,23 @@ const LoaderWrapper = styled.div`
   justify-content: center;
 `
 
-function Freelances() {
+function Freelancers() {
   const { theme } = useTheme()
   const { data, isLoading, error } = useFetch(
-    `http://localhost:8000/freelances`
+    `http://localhost:8000/freelancers`
   )
 
   const freelancersList = data?.freelancersList
 
   if (error) {
-    return <span>Il y a un problème</span>
+    return <span>There is an error</span>
   }
 
   return (
     <div>
-      <PageTitle theme={theme}>Trouvez votre prestataire</PageTitle>
+      <PageTitle theme={theme}>Find your service provider</PageTitle>
       <PageSubtitle theme={theme}>
-        Chez Shiny nous réunissons les meilleurs profils pour vous.
+        Here at Shiny we bring together the best profiles for you.
       </PageSubtitle>
       {isLoading ? (
         <LoaderWrapper>
@@ -72,4 +72,4 @@ function Freelances() {
   )
 }
 
-export default Freelances
+export default Freelancers

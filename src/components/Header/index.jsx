@@ -26,13 +26,13 @@ function Header() {
       </Link>
       <div>
         <StyledLink $theme={theme} to="/">
-          Accueil
+          Home
         </StyledLink>
-        <StyledLink $theme={theme} to="/freelances">
-          Profils
+        <StyledLink $theme={theme} to="/freelancers">
+          Profiles
         </StyledLink>
         <StyledLink to="/survey/1" $isFullLink>
-          Faire le test
+          Take the survey
         </StyledLink>
       </div>
     </NavContainer>
