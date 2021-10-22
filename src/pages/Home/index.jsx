@@ -48,11 +48,11 @@ function Home() {
       <HomerContainer theme={theme}>
         <LeftCol>
           <StyledTitle theme={theme}>
-            Repérez vos besoins, on s’occupe du reste, avec les meilleurs
-            talents
+            Identify your needs and we'll take care of the rest along with our
+            talented professionals
           </StyledTitle>
           <StyledLink to="/survey/1" $isFullLink>
-            Faire le test
+            Take teh survey
           </StyledLink>
         </LeftCol>
         <Illustration src={HomeIllustration} />
