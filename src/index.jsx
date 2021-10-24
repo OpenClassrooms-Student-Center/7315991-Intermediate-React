@@ -29,7 +29,7 @@ ReactDOM.render(
               <Results />
             </Route>
             <Route path="/freelancers">
-              <Freelances />
+              <Freelancers />
             </Route>
             <Route path="*">
               <Error />
