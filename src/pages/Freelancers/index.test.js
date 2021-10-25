@@ -6,7 +6,7 @@ import {
   waitFor,
 } from '@testing-library/react'
 import { render } from '../../utils/test'
-import Freelances from './'
+import Freelancers from './'
 import '@testing-library/jest-dom/extend-expect'
 
 const freelancersMockedData = [
@@ -23,7 +23,7 @@ const freelancersMockedData = [
 ]
 
 const server = setupServer(
-  rest.get('http://localhost:8000/freelances', (req, res, ctx) => {
+  rest.get('http://localhost:8000/freelancers', (req, res, ctx) => {
     return res(
       ctx.status(200),
       ctx.json({ freelancersList: freelancersMockedData })
@@ -36,7 +36,7 @@ afterEach(() => server.resetHandlers())
 afterAll(() => server.close())
 
 it('Should display freelancers names', async () => {
-  render(<Freelances />)
+  render(<Freelancers />)
 
   await waitForElementToBeRemoved(() => screen.getByTestId('loader'))
 
@@ -48,22 +48,22 @@ it('Should display freelancers names', async () => {
 
 it('Should display error content', async () => {
   server.use(
-    rest.get('http://localhost:8000/freelances', (req, res, ctx) => {
+    rest.get('http://localhost:8000/freelancers', (req, res, ctx) => {
       return res.once(
         ctx.status(500),
         ctx.json({
-          errorMessage: `Oups il y a eu une erreur dans l'API`,
+          errorMessage: `Oops! There is an error with the API`,
         })
       )
     })
   )
-  render(<Freelances />)
+  render(<Freelancers />)
   await waitForElementToBeRemoved(() => screen.getByTestId('loader'))
   expect(screen.getByTestId('error')).toMatchInlineSnapshot(`
     <span
       data-testid="error"
     >
-      Oups il y a eu une erreur dans l'API
+      Oops! There is an error with the API
     </span>
   `)
 })
