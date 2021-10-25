@@ -52,7 +52,7 @@ it('Should display error content', async () => {
       return res.once(
         ctx.status(500),
         ctx.json({
-          errorMessage: `Oops! There is an error with the API`,
+          errorMessage: `Oops! There is an error in the API`,
         })
       )
     })
@@ -63,7 +63,7 @@ it('Should display error content', async () => {
     <span
       data-testid="error"
     >
-      Oops! There is an error with the API
+      Oops! There is an error in the API
     </span>
   `)
 })
