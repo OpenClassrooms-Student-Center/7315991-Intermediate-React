@@ -11,7 +11,7 @@ class Profile extends Component {
   componentDidMount() {
     const { id } = this.props.match.params
 
-    fetch(`http://localhost:8000/freelance?id=${id}`)
+    fetch(`http://localhost:8000/freelancer?id=${id}`)
       .then((response) => response.json())
       .then((jsonResponse) => {
         this.setState({ profileData: jsonResponse?.freelanceData })
@@ -42,8 +42,8 @@ class Profile extends Component {
               <div key={`skill-${skill}-${id}`}>{skill}</div>
             ))}
         </div>
-        <div>{available ? 'Disponible maintenant' : 'Indisponible'}</div>
-        <span>{tjm} € / jour</span>
+        <div>{available ? 'Available immediately' : 'Not available'}</div>
+        <span>${tjm} / day</span>
       </div>
     )
   }

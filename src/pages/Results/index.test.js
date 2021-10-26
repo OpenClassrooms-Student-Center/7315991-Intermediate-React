@@ -31,11 +31,11 @@ describe('The formatQueryParams function', () => {
 const resultsMockedData = [
   {
     title: 'seo',
-    description: `Le SEO est en charge du référencement web d'une page`,
+    description: `SEO is in charge of the web referencing of a page`,
   },
   {
     title: 'frontend',
-    description: `Le développeur ou la développeuse frontend se charge de l'interface : interactions avec l'utilisateur, style, etc.`,
+    description: `The front-end developer is responsible for the interface: user interaction, style, etc.`,
   },
 ]
 

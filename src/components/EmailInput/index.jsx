@@ -27,7 +27,7 @@ function EmailInput({ theme }) {
 
   return (
     <InputWrapper theme={theme}>
-      <StyledLabel theme={theme}>Adresse email</StyledLabel>
+      <StyledLabel theme={theme}>Email Addresse</StyledLabel>
       <StyledInput
         theme={theme}
         onChange={(e) => setInputValue(e.target.value)}

@@ -26,7 +26,7 @@ export default class MyComponent extends Component {
           textAlign: 'center',
         }}
       >
-        Mon composant 🤖
+        My component 🤖
       </div>
     )
   }
