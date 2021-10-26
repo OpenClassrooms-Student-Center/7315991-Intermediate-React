@@ -52,7 +52,7 @@ function Home() {
         <LeftCol>
           {display && <MyComponent />}
           <button onClick={() => setDisplay(!display)}>
-            {display ? 'Cacher' : 'Afficher'} mon composant
+            {display ? 'Hide' : 'Show'} my component
           </button>
           <StyledTitle theme={theme}>
             Identify your needs and we'll take care of the rest along with our
