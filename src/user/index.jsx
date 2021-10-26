@@ -6,7 +6,7 @@ function User() {
   let { path } = useRouteMatch()
   return (
     <div>
-      <h1>Espace client</h1>
+      <h1>Client space</h1>
       <Switch>
         <Route exact path={`${path}/cart`}>
           <Cart />

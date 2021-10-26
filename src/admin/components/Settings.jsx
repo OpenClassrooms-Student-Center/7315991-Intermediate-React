@@ -1,7 +1,7 @@
 export default function Settings() {
   return (
     <div>
-      <h2>Paramètres ⚙️</h2>
+      <h2>Settings ⚙️</h2>
     </div>
   )
 }

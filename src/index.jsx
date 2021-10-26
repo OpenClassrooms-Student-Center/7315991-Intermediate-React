@@ -8,12 +8,12 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <nav style={{ display: 'flex', flexDirection: 'column' }}>
-        <h2>Liens admin</h2>
+        <h2>Admin links</h2>
         <Link to="/admin/dashboard">Dashboard (admin)</Link>
-        <Link to="/admin/settings">Paramètres (admin)</Link>
-        <Link to="/admin/money">Argent (admin)</Link>
-        <h2>Liens user</h2>
-        <Link to="/user/cart">Panier (user)</Link>
+        <Link to="/admin/settings">Settigns (admin)</Link>
+        <Link to="/admin/money">Revenue (admin)</Link>
+        <h2>User links</h2>
+        <Link to="/user/cart">Cart (user)</Link>
       </nav>
       <Switch>
         <Route path="/admin">

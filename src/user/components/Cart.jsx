@@ -1,7 +1,7 @@
 export default function Cart() {
   return (
     <div>
-      <h2>Mon panier 🧺</h2>
+      <h2>My Cart 🛒</h2>
     </div>
   )
 }

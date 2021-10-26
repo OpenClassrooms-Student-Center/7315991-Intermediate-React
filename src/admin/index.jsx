@@ -8,7 +8,7 @@ function Admin() {
   let { path } = useRouteMatch()
   return (
     <div>
-      <h1>Espace admin</h1>
+      <h1>Admin space</h1>
       <Switch>
         <Route exact path={`${path}/dashboard`}>
           <Dashboard />
