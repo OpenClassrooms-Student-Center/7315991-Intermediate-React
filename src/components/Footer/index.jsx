@@ -26,7 +26,7 @@ function Footer() {
     <FooterContainer>
       <EmailInput theme={theme} />
       <NightModeButton onClick={() => toggleTheme()}>
-        Changer de mode : {theme === 'light' ? '☀️' : '🌙'}
+        Change the mode : {theme === 'light' ? '☀️' : '🌙'}
       </NightModeButton>
     </FooterContainer>
   )

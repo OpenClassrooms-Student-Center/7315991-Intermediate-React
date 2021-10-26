@@ -24,8 +24,8 @@ const StyledInput = styled.input`
 
 class EmailInput extends Component {
   constructor(props) {
-    // L'autre manière de binder de manière explicite votre fonction au this
-    // this.updateInputValue =this.updateInputValue.bind(this)
+    // The other way to explicitly bind your function to this is:
+    // this.updateInputValue = this.updateInputValue.bind(this)
     super(props)
     this.state = {
       inputValue: '',
@@ -41,7 +41,7 @@ class EmailInput extends Component {
 
     return (
       <InputWrapper theme={theme}>
-        <StyledLabel theme={theme}>Adresse Email</StyledLabel>
+        <StyledLabel theme={theme}>Email Address</StyledLabel>
         <StyledInput
           theme={theme}
           onChange={(e) => this.updateInputValue(e.target.value)}

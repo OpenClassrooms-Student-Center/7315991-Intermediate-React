@@ -48,7 +48,7 @@ const CardWrapper = styled.div`
 //   return (
 //     <CardWrapper theme={theme}>
 //       <CardLabel theme={theme}>{label}</CardLabel>
-//       <CardImage src={picture} alt="freelance" />
+//       <CardImage src={picture} alt="freelancer" />
 //       <CardTitle theme={theme}>
 //         {star} {title} {star}
 //       </CardTitle>
@@ -67,7 +67,7 @@ class Card extends Component {
     return (
       <CardWrapper theme={theme}>
         <CardLabel theme={theme}>{label}</CardLabel>
-        <CardImage src={picture} alt="freelance" />
+        <CardImage src={picture} alt="freelancer" />
         <CardTitle theme={theme}>{title}</CardTitle>
       </CardWrapper>
     )
