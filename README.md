@@ -1,22 +1,20 @@
-# OpenClassrooms - Créez une application React complète
+# OpenClassrooms - Intermediate React
 
-Ce repo contient le code de base pour les exercices que vous trouverez dans le cours [OpenClassrooms - Créez une application React complète](https://openclassrooms.com/fr/courses/7150606-creez-une-application-react-complete).
+This repo contains the base code for the exercises you will find in the course [Intermediate React](https://openclassrooms.com/fr/courses/7315991-intermediate-react).
 
-## Exercices
+## Exercises
 
-### Partie 1 - Créez une Single Page Application à l’architecture robuste
+### Part 1 - Create a Single-Page Application With Robust Architecture
 
-Les exercices de cette partie se trouvent sur CodePen.
-
-| Contenu                                                                                                                                     | begin                                                                     | solution                                                       |
+| Content                                                                                                                                     | begin                                                                     | solution                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| [Chapitre 0](https://openclassrooms.com/fr/courses/7150606-creez-une-application-react-complete/7254167-tirez-le-maximum-de-ce-cours)                         | /                                                                         | /                                                              |
-| [Chapitre 1](https://openclassrooms.com/fr/courses/7150606-creez-une-application-react-complete/7254405-architecturez-votre-projet)                      | / | [Branche solution](https://github.com/OpenClassrooms-Student-Center/7150606-React-intermediaire/tree/P1C1-solution) |
-| [Chapitre 2](https://openclassrooms.com/fr/courses/7150606-creez-une-application-react-complete/7254735-transformez-votre-application-en-single-page-application-avec-react-router) | [Branche begin](https://github.com/OpenClassrooms-Student-Center/7150606-React-intermediaire/tree/P1C2-begin) | [Branche solution](https://github.com/OpenClassrooms-Student-Center/7150606-React-intermediaire/tree/P1C2-solution) |
-| [Chapitre 3](https://openclassrooms.com/fr/courses/7150606-creez-une-application-react-complete/7254949-indiquez-les-types-de-vos-props-avec-les-proptypes) | [Branche begin](https://github.com/OpenClassrooms-Student-Center/7150606-React-intermediaire/tree/P1C3-begin) | [Branche solution](https://github.com/OpenClassrooms-Student-Center/7150606-React-intermediaire/tree/P1C3-solution) |
-| [Chapitre 4](https://openclassrooms.com/fr/courses/7150606-creez-une-application-react-complete/7255266-scopez-votre-css-avec-styled-components) | [Branche begin](https://github.com/OpenClassrooms-Student-Center/7150606-React-intermediaire/tree/P1C4-begin) | [Branche solution](https://github.com/OpenClassrooms-Student-Center/7150606-React-intermediaire/tree/P1C4-solution) |
+| [Chapter 1](https://openclassrooms.com/fr/courses/7315991-intermediate-react/7521745-get-the-most-out-of-this-course)                         | /                                                                         | /                                                              |
+| [Chapter 2](https://openclassrooms.com/fr/courses/7315991-intermediate-react/7521881-structure-your-project)                      | / | [Solution Branch](https://github.com/OpenClassrooms-Student-Center/7150606-React-intermediaire/tree/P1C1-solution) |
+| [Chapter 3](https://openclassrooms.com/fr/courses/7315991-intermediate-react/7522219-turn-your-application-into-a-single-page-app-with-react-router) | [Begin Branch](https://github.com/OpenClassrooms-Student-Center/7150606-React-intermediaire/tree/P1C2-begin) | [Solution Branch](https://github.com/OpenClassrooms-Student-Center/7150606-React-intermediaire/tree/P1C2-solution) |
+| [Chapter 4](https://openclassrooms.com/fr/courses/7315991-intermediate-react/7522447-specify-types-of-props-with-proptypes) | [Begin Branch](https://github.com/OpenClassrooms-Student-Center/7150606-React-intermediaire/tree/P1C3-begin) | [Solution Branch](https://github.com/OpenClassrooms-Student-Center/7150606-React-intermediaire/tree/P1C3-solution) |
+| [Chapter 5](https://openclassrooms.com/fr/courses/7315991-intermediate-react/7522766-scope-your-css-with-styled-components) | [Begin Branch](https://github.com/OpenClassrooms-Student-Center/7150606-React-intermediaire/tree/P1C4-begin) | [Solution Branch](https://github.com/OpenClassrooms-Student-Center/7150606-React-intermediaire/tree/P1C4-solution) |
 
-### Partie 2 - Incorporez des données dans une application React avec les hooks
+### Part 2 - Incorporez des données dans une application React avec les hooks
 
 | Contenu                                                                                                                                                    | begin                                                                                                                                                                                                             | solution                                                                                                                                                                                                                      |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
