@@ -73,7 +73,7 @@ function Survey() {
   const { surveyData } = data
 
   if (error) {
-    return <span>Il y a un problème</span>
+    return <span>There is an error</span>
   }
 
   return (
@@ -101,11 +101,11 @@ function Survey() {
         </ReplyBox>
       </ReplyWrapper>
       <LinkWrapper>
-        <Link to={`/survey/${prevQuestionNumber}`}>Précédent</Link>
+        <Link to={`/survey/${prevQuestionNumber}`}>Back</Link>
         {surveyData && surveyData[questionNumberInt + 1] ? (
-          <Link to={`/survey/${nextQuestionNumber}`}>Suivant</Link>
+          <Link to={`/survey/${nextQuestionNumber}`}>Next</Link>
         ) : (
-          <Link to="/results">Résultats</Link>
+          <Link to="/results">Results</Link>
         )}
       </LinkWrapper>
     </SurveyContainer>
