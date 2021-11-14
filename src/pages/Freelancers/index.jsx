@@ -1,29 +1,29 @@
 import Card from '../../components/Card'
 import DefaultPicture from '../../assets/profile.png'
 
-const freelanceProfiles = [
+const freelancerProfiles = [
   {
     name: 'Jane Doe',
-    jobTitle: 'Devops',
+    jobTitle: 'DevOps',
     picture: DefaultPicture,
   },
   {
     name: 'John Doe',
-    jobTitle: 'Developpeur frontend',
+    jobTitle: 'Front-end Developer',
     picture: DefaultPicture,
   },
   {
     name: 'Jeanne Biche',
-    jobTitle: 'Développeuse Fullstack',
+    jobTitle: 'Fullstack Developer',
     picture: DefaultPicture,
   },
 ]
 
-function Freelances() {
+function Freelancers() {
   return (
     <div>
-      <h1>Freelances 👩‍💻👨‍💻👩‍💻</h1>
-      {freelanceProfiles.map((profile, index) => (
+      <h1>Freelancers 👩‍💻👨‍💻👩‍💻</h1>
+      {freelancerProfiles.map((profile, index) => (
         <Card
           key={`${profile.name}-${index}`}
           label={profile.jobTitle}
@@ -35,4 +35,4 @@ function Freelances() {
   )
 }
 
-export default Freelances
+export default Freelancers
