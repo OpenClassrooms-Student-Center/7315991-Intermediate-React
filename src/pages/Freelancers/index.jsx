@@ -8,27 +8,27 @@ const CardsContainer = styled.div`
   grid-template-columns: repeat(2, 1fr);
 `
 
-const freelanceProfiles = [
+const freelancerProfiles = [
   {
     name: 'Jane Doe',
-    jobTitle: 'Devops',
+    jobTitle: 'DevOps',
   },
   {
     name: 'John Doe',
-    jobTitle: 'Developpeur frontend',
+    jobTitle: 'Front-end Developer',
   },
   {
     name: 'Jeanne Biche',
-    jobTitle: 'Développeuse Fullstack',
+    jobTitle: 'Fullstack Developer',
   },
 ]
 
-function Freelances() {
+function Freelancers() {
   return (
     <div>
-      <h1>Freelances 👩‍💻👨‍💻👩‍💻</h1>
+      <h1>Freelancers 👩‍💻👨‍💻👩‍💻</h1>
       <CardsContainer>
-        {freelanceProfiles.map((profile, index) => (
+        {freelancerProfiles.map((profile, index) => (
           <Card
             key={`${profile.name}-${index}`}
             label={profile.jobTitle}
@@ -40,4 +40,4 @@ function Freelances() {
   )
 }
 
-export default Freelances
+export default Freelancers
