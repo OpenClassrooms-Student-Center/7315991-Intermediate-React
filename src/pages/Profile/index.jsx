@@ -129,9 +129,9 @@ function Profile() {
                 ))}
             </SkillsWrapper>
             <Availability available={available}>
-              {available ? 'Disponible maintenant' : 'Indisponible'}
+              {available ? 'Available immediately' : 'Unavailable'}
             </Availability>
-            <Price>{tjm} € / jour</Price>
+            <Price>${tjm} / day</Price>
           </ProfileDetails>
         </ProfileWrapper>
       )}
