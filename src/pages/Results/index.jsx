@@ -93,7 +93,7 @@ function Results() {
   return (
     <ResultsContainer theme={theme}>
       <ResultsTitle theme={theme}>
-        Les compétences dont vous avez besoin :
+        You require the following skills:
         {resultsData &&
           resultsData.map((result, index) => (
             <JobTitle
@@ -104,8 +104,8 @@ function Results() {
             </JobTitle>
           ))}
       </ResultsTitle>
-      <StyledLink $isFullLink to="/freelances">
-        Découvrez nos profils
+      <StyledLink $isFullLink to="/freelancers">
+        Take a look at our freelancer profiles
       </StyledLink>
       <DescriptionWrapper>
         {resultsData &&
