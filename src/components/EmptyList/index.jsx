@@ -28,10 +28,10 @@ const Illustration = styled.img`
 function EmptyList({ theme }) {
   return (
     <Container theme={theme}>
-      <Title theme={theme}>Dommage...</Title>
+      <Title theme={theme}>Too bad!</Title>
       <Illustration src={EmptyIllustration} />
       <SubTitle theme={theme}>
-        Il semblerait que vous n’ayez besoin d’aucune compétence
+        It looks like you don't need any skills right now
       </SubTitle>
     </Container>
   )
