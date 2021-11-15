@@ -52,7 +52,7 @@ function Card({ label, title, picture }) {
   return (
     <CardWrapper theme={theme} onClick={() => setIsFavorite(!isFavorite)}>
       <CardLabel theme={theme}>{label}</CardLabel>
-      <CardImage src={picture} alt="freelance" />
+      <CardImage src={picture} alt="freelancer" />
       <CardTitle theme={theme}>
         {star} {title} {star}
       </CardTitle>
