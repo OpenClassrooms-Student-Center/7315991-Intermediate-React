@@ -8,12 +8,12 @@ import Freelances from './'
 const freelancersMockedData = [
   {
     name: 'Harry Potter',
-    job: 'Magicien frontend',
+    job: 'Front-end Magician',
     picture: '',
   },
   {
     name: 'Hermione Granger',
-    job: 'Magicienne fullstack',
+    job: 'Fullstack Magician',
     picture: '',
   },
 ]
