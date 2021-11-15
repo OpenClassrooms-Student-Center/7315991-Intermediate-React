@@ -77,7 +77,7 @@ function Survey() {
   const surveyData = data?.surveyData
 
   if (error) {
-    return <span>Il y a un problème</span>
+    return <span>There is an error</span>
   }
 
   return (
@@ -96,22 +96,22 @@ function Survey() {
           isSelected={answers[questionNumber] === true}
           theme={theme}
         >
-          Oui
+          Yes
         </ReplyBox>
         <ReplyBox
           onClick={() => saveReply(false)}
           isSelected={answers[questionNumber] === false}
           theme={theme}
         >
-          Non
+          No
         </ReplyBox>
       </ReplyWrapper>
       <LinkWrapper theme={theme}>
-        <Link to={`/survey/${prevQuestionNumber}`}>Précédent</Link>
+        <Link to={`/survey/${prevQuestionNumber}`}>Back</Link>
         {surveyData && surveyData[questionNumberInt + 1] ? (
-          <Link to={`/survey/${nextQuestionNumber}`}>Suivant</Link>
+          <Link to={`/survey/${nextQuestionNumber}`}>Next</Link>
         ) : (
-          <Link to="/results">Résultats</Link>
+          <Link to="/results">Results</Link>
         )}
       </LinkWrapper>
     </SurveyContainer>
