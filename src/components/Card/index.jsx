@@ -57,7 +57,7 @@ class Card extends Component {
     return (
       <CardWrapper theme={theme} onClick={this.setFavorite}>
         <CardLabel theme={theme}>{label}</CardLabel>
-        <CardImage src={picture} alt="freelance" />
+        <CardImage src={picture} alt="freelancer" />
         <CardTitle theme={theme}>{title}</CardTitle>
       </CardWrapper>
     )
