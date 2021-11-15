@@ -8,7 +8,7 @@ describe('Card', () => {
       <ThemeProvider>
         <Card
           title="Harry Potter"
-          label="Magicien frontend"
+          label="Front-End Magician"
           picture="/myPicture.png"
         />
       </ThemeProvider>
