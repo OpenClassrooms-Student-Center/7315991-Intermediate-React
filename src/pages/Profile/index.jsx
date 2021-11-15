@@ -42,8 +42,8 @@ class Profile extends Component {
               <div key={`skill-${skill}-${id}`}>{skill}</div>
             ))}
         </div>
-        <div>{available ? 'Disponible maintenant' : 'Indisponible'}</div>
-        <span>{tjm} € / jour</span>
+        <div>{available ? 'Available immediately' : 'Unavailable'}</div>
+        <span>${tjm} / day</span>
       </div>
     )
   }
